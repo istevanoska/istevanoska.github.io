@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilina's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navlist">
+<!--    <img src="White_Typography_Initial_CR_Logo-removebg-preview.png" height="100" width="300"/>-->
+    <img src="image-removebg-preview.png" width="150"/>
+    <div id="navlist-right">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+<div class="prv-del">
+<div class="content">
+    <div id="popup-square" >
+        <h1>Portfolio</h1>
+        <p> Ilina Stevanoska</p>
+    </div>
+</div>
+    <div class="popup-square1">
+        <p>I’m a passionate Software Engineer with expertise in Machine Learning and Mobile App Development. I thrive on transforming complex problems into innovative solutions through clean and efficient code.</p>
+    </div>
+</div>
+
+<a href="about.html"><button class="button1">Get In Touch</button></a>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navlist');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll
+            navbar.style.top = '-200px'; // Adjust this value as needed
+        } else {
+            // Upscroll
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+</body>
+</html>

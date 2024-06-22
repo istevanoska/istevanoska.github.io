@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilina's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="navlist">
+
+    <!--    <img src="White_Typography_Initial_CR_Logo-removebg-preview.png" height="100" width="300"/>-->
+    <img src="image-removebg-preview.png" width="150"/>
+    <div id="navlist-right">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="sliki">
+    <div class="patuvanje1">
+    <img src="lake%20como/lakecomo.jpg" width="400"/>
+        <a href="lakecomo.html"><p class="hover-text">Lake Como</p></a>
+    </div>
+    <div class="patuvanje2">
+    <img src="vienna/1.jpg"  width="400"/>
+        <a href="vienna.html"><p class="hover-text">Vienna</p></a>
+    </div>
+    <div class="patuvanje3">
+    <img src="milan/milan1.jpg"  width="400"/>
+        <a href="milan.html"><p class="hover-text">Milan</p></a>
+    </div>
+
+</div>
+
+    <footer class="footer-adv">
+    <i><p> &copy Ilina Stevanoska 2024</p></i>
+
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navlist');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll
+            navbar.style.top = '-200px'; // Adjust this value as needed
+        } else {
+            // Upscroll
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+</body>
+</html>

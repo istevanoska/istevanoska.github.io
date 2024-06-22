@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilina's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="navlist">
+    <img src="image-removebg-preview.png" width="150"/>
+    <div id="navlist-right">
+        <a href="index.html">Home</a>
+        <a href="experiences.html.html">Experiences</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="collage-container">
+    <img src="milan/milan1.jpg" class="collage-img img1" />
+    <img src="milan/milan10.jpg" class="collage-img img2" />
+    <img src="milan/milan12.jpg" class="collage-img img3" />
+    <img src="milan/milan7.jpg" class="collage-img img4" />
+    <img src="milan/milan5.jpg" class="collage-img img5" />
+    <img src="milan/milan2.jpg" class="collage-img img6" />
+    <img src="milan/milan11.jpg" class="collage-img img7" />
+    <img src="milan/milan15.jpg" class="collage-img img8" />
+    <img src="milan/milan8.jpg" class="collage-img img9" />
+    <img src="milan/milan9.jpg" class="collage-img img10" />
+    <!--  <img src="lake como/lakecomo11.jpg" class="collage-img img11"/>-->
+</div>
+
+<footer class="footer-adv">
+    <i><p>&copy Ilina Stevanoska 2024</p></i>
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navlist');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll
+            navbar.style.top = '-200px'; // Adjust this value as needed
+        } else {
+            // Upscroll
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+</body>
+</html>

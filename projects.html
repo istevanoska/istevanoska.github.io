@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilina's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="proekti">
+<body>
+<div id="navlist">
+
+    <!--    <img src="White_Typography_Initial_CR_Logo-removebg-preview.png" height="100" width="300"/>-->
+    <img src="image-removebg-preview.png" width="150"/>
+    <div id="navlist-right">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="projects">
+<!--    <h1>Projects I have worked on:</h1>-->
+    <p>DOKUTECH - Game Jam</p>
+    <p>Amazing energy among participants who are ready to get some experience in game development and have fun!
+        This attractive workshop was hosted by the local gaming community and organized by IPKO Foundation.</p>
+<!--    <a href=""><button class="button2">Learn More</button></a>-->
+</div>
+
+<div class="container">
+
+
+    <div class="gallery-wrap">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+    </div>
+</div>
+
+<div class="dokutech">
+    <p>DOKUTECH, as an annual event, once more showed that it is becoming one of the leading tech events in the Balkans; devoted to idea sharing, igniting discussions, women empowerment through tech, interactive workshops and DIY sessions, fun-filled days, and musical evenings.</p>
+    <a href="https://doku.tech/topics/doku-tech-2022-brings-global-trends-of-artificial-intelligence-to-kosovo/"><button class="button3">Learn More</button></a>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+</div>
+
+<footer>
+    <i><p> &copy Ilina Stevanoska 2024</p></i>
+
+</footer>
+
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navlist');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll
+            navbar.style.top = '-200px'; // Adjust this value as needed
+        } else {
+            // Upscroll
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+</body>
+</div>
+</html>

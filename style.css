@@ -1,0 +1,676 @@
+* {
+    box-sizing: border-box;
+    /*font-family: Arial Narrow;*/
+}
+
+body {
+    margin: 0;
+    margin-top: -200px;
+}
+
+/* Navlist designing */
+#navlist {
+    overflow: hidden;
+    /*background-color: gray;*/
+    padding: 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    color: black;
+    /*border-bottom: 1px solid white;*/
+    /*opacity: 70%;*/
+    /*background-color: #18181a;*/
+    opacity: 90%;
+    /*padding-left: 100px;*/
+    /*padding-bottom: -10px;*/
+    padding-top: -20px;
+    padding-left: 500px;
+    margin-right: 400px;
+}
+
+#navlist a {
+    float: left;
+    color: white;
+    opacity: 70%;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Bahnschrift;
+    word-spacing: 20px;
+    padding-top: 50px;
+}
+
+#navlist-right{
+    margin-right: 200px;
+    padding-top: 30px;
+}
+
+#navlist #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#navlist a:hover {
+    color: gray;
+}
+
+#navlist-right {
+    float: right;
+}
+
+
+/* Content design */
+.content {
+    /*display: flex;*/
+    justify-content: center;
+    margin-top:450px;
+    font-size:22px;
+    margin-left: 250px;
+    /*padding-bottom: 300px;*/
+    /*box-shadow: 5px 5px 5px 5px #18181a;*/
+    /*background-color: #27272a;*/
+    color: white;
+    width: 800px;
+    opacity: 80%;
+    padding: 50px;
+    z-index: 0;
+    font-family: "Trebuchet MS";
+}
+.content h1{
+    position: absolute;
+    font-size: 120px;
+    top: 200px;
+    text-transform: uppercase;
+}
+.content p{
+    position: absolute;
+    font-size: 70px;
+    right: 490px;
+    top: 500px;
+
+}
+.prv-del{
+    margin-right: 50px;
+}
+
+.popup-square1{
+    margin-left: 400px;
+    /*box-shadow: 5px 5px 5px 5px #18181a;*/
+    background-color: #17171a;
+    padding: 50px;
+    color: white;
+    width: 700px;
+    z-index: 1;
+    font-size: 25px;
+    opacity: 90%;
+    margin-top: -20px;
+    font-family: "Trebuchet MS";
+}
+body{
+    background: url("bg/7951379690780.jpg") no-repeat;
+    /*background-position: center;*/
+    width: auto;
+    height: auto;
+    margin-right: 3000px;
+}
+#navlist img{
+    /*margin-top: 50px;*/
+    margin-left: -400px;
+}
+#navlist a{
+    text-transform: uppercase;
+}
+a .button1{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -60px ;
+    color: white;
+    border: 2px solid white;
+    padding:10px;
+    background-color: transparent;
+    width: 150px;
+    opacity: 60%;
+    font-size: 16px;
+}
+a .button1:hover{
+    background-color: white;
+    opacity: 60%;
+    color: #27272a;
+}
+
+.projects{
+    /*display: inline-block;*/
+    color: white;
+    font-family: "Trebuchet MS";
+    justify-content: center;
+    margin-top: 500px;
+    padding-left: 600px;
+    padding-right: 1100px   ;
+    width: 500px;
+    /*background-color: #18181a;*/
+    /*opacity: 70%;*/
+}
+
+.projects p{
+    width: 800px;
+}
+.projects p:nth-of-type(1){
+    position: absolute;
+    top: 200px;
+    margin-top: -100px;
+    margin-left: -320px;
+    margin-top: 20px ;
+    z-index: 0;
+    font-size: 70px;
+    opacity: 70%;
+}
+.projects p:last-of-type{
+    position: relative;
+    /*margin-top: 100px;*/
+    top: -40px;
+    left: -250px;
+    font-size: 20px;
+    width: 1000px;
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    opacity: 80%;
+    background-color: #18181a;
+    padding:30px;
+
+}
+.projects a .button2{
+    position: absolute;
+    margin-left: 400px;
+    /*margin-top: 30px ;*/
+    top: 360px;
+    color: white;
+    border: 2px solid white;
+    padding:10px;
+    background-color: transparent;
+    width: 150px;
+    /*opacity: 0%;*/
+    font-size: 16px;
+
+}
+a .button2:hover{
+    background-color: white;
+    opacity: 60%;
+    color: #27272a;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+}
+
+/*h1{*/
+/*    position: relative;*/
+/*    margin-bottom: 45px;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*    font-size: 44px;*/
+/*    text-transform: uppercase;*/
+/*    color: #424242;*/
+/*}*/
+
+.gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    /*background-repeat: none;*/
+    transition: flex 0.8s ease;
+
+    &:hover{
+        flex: 7;
+    }
+}
+
+.item-1 {
+    background-image: url('DOKU.TECH-2022_Feature-Image.png');
+}
+
+.item-2 {
+    background-image: url('viber/viber_image_2024-06-19_20-17-19-520.jpg');
+}
+
+.item-3 {
+    background-image: url('Screenshot 2024-06-19 200734.png');
+}
+
+.item-4 {
+    background-image: url('viber/viber_image_2024-06-19_20-17-18-874.jpg');
+}
+
+.item-5 {
+    background-image: url('viber/viber_image_2024-06-19_20-17-22-669.jpg');
+}
+.navlist img{
+
+}
+.dokutech p:nth-of-type(1){
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: #18181a;
+    opacity: 80%;
+    width: 1200px;
+    font-family: "Trebuchet MS";
+    margin-left: 250px;
+    padding: 20px;
+    border-top: 2px solid white;
+    word-spacing: 3px;
+    padding-bottom: 80px;
+    margin-top: -30px;
+}
+.button3{
+    position: absolute;
+    font-size: 25px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    opacity: 70%;
+    left: 1200px;
+    top: 1200px;
+}
+a .button3:hover{
+    background-color: white;
+    color: #18181a;
+
+}
+footer{
+    font-size: 20px;
+    background-color: #18181a;
+    color: white;
+    padding: 10px;
+    opacity: 70%;
+    /*margin-left: 200px;*/
+    text-align: center;
+}
+
+/*Experiences*/
+
+.experiences{
+    background-color: #18181a;
+    opacity: 70%;
+    border: 3px solid white;
+    padding: 50px;
+    margin-left: 200px;
+    margin-top: 400px;
+    margin-right: 200px;
+    font-family: "Trebuchet MS";
+    z-index: 1;
+}
+
+.ex1 {
+    position: relative;
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ex1 img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ex1 .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    background: #18181a;
+    padding: 10px;
+    /*border-radius: 5px;*/
+}
+.ex1 .hover-text:hover{
+    color: #18181a;
+    background-color: white;
+    opacity: 70%;
+}
+
+.ex1:hover {
+    transform: scale(1.7);
+}
+
+.ex1:hover .hover-text {
+    opacity: 1;
+}
+
+.opening {
+    position: absolute;
+    z-index: 0;
+    color: white;
+    font-size: 70px;
+    font-family: "Trebuchet MS";
+    text-transform: uppercase;
+    margin-left: 150px;
+    top: 85px;
+}
+
+/*.social{*/
+/*    position: absolute;*/
+/*    right: 35px;*/
+/*    bottom: 0;*/
+
+/*    img{*/
+/*        display: block;*/
+/*        width: 32px;*/
+/*    }*/
+/*}*/
+
+/*adventures*/
+.sliki{
+    display: flex;
+    margin-top: 400px;
+    margin-left: 250px;
+}
+.sliki img{
+    margin: 10px;
+    box-shadow: 3px 3px 3px 3px #18181a;
+    background-color: #18181a;
+}
+.sliki p:first-of-type{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.sliki p:nth-of-type(2){
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.sliki p:last-of-type{
+    position: absolute;
+    top: 40%;
+    left: 75%;
+}
+.patuvanje1{
+    /*position: relative;*/
+    overflow: hidden;
+    /*margin: 0 auto;*/
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje1 img {
+
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje1 .hover-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    margin-left: -100px;
+    margin-top: -100px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    background: #18181a;
+    padding: 10px;
+    /*border-radius: 5px;*/
+}
+.patuvanje1 .hover-text:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    opacity: 70%;
+}
+
+.patuvanje1:hover {
+    transform: scale(1.1);
+}
+
+.patuvanje1:hover .hover-text {
+    opacity: 1;
+}
+
+.patuvanje2{
+    /*position: relative;*/
+    overflow: hidden;
+    /*margin: 0 auto;*/
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje2 img {
+
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje2 .hover-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    margin-left: -100px;
+    margin-top: -100px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    background: #18181a;
+    padding: 10px;
+    /*border-radius: 5px;*/
+}
+.patuvanje2 .hover-text:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    opacity: 70%;
+}
+
+.patuvanje2:hover {
+    transform: scale(1.1);
+}
+
+.patuvanje2:hover .hover-text {
+    opacity: 1;
+}
+/*patuvanje 3*/
+
+.patuvanje3{
+    /*position: relative;*/
+    overflow: hidden;
+    /*margin: 0 auto;*/
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje3 img {
+
+    transition: transform 0.3s ease-in-out;
+}
+.patuvanje3 .hover-text {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    margin-left: -100px;
+    margin-top: -100px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    background: #18181a;
+    padding: 10px;
+    /*border-radius: 5px;*/
+}
+.patuvanje3 .hover-text:hover{
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    opacity: 70%;
+}
+
+.patuvanje3:hover {
+    transform: scale(1.1);
+}
+
+.patuvanje3:hover .hover-text {
+    opacity: 1;
+}
+.footer-adv{
+    margin-top: 150px;
+}
+/*galerija lake como*/
+.slika1{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+.slika2{
+    position: absolute;
+    top: 50px;
+    left: 440px;
+}
+.slika3{
+    position: absolute;
+    top: 250px;
+    left: 1250px;
+}
+.slika4{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+.slika5{
+    position: absolute;
+    top: 150px;
+    left: 780px;
+}
+.slika6{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.collage-container {
+    position: relative;
+    width: 100%;
+    height: 1200px; /* Adjust the height as needed */
+    margin-top: 200px;
+    overflow: hidden;
+    margin-left: -30px;
+}
+
+.collage-img {
+    position: absolute;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    /*margin-top: 30px;*/
+
+}
+
+.collage-img:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Custom positions for each image */
+.img1 { width: 350px; top: 20px; left: 50px; }
+.img2 { width: 400px; top: 100px; left: 700px; z-index: 100}
+.img3 { width: 350px; top: 50px; left: 1000px; }
+.img4 { width: 350px; top: 300px; left: 170px; z-index: 101}
+.img5 { width: 450px; top: 450px; left: 600px; }
+.img6 { width: 450px; top: 450px; left: 1000px; }
+.img7 { width: 350px; top: 350px; left: 1250px; z-index: 100 }
+.img8 { width: 400px; top: 100px; left: 1300px; }
+.img9 { width: 400px; top: 450px; left: 250px; z-index: 99}
+.img10 { width: 400px; top: 50px; left: 350px; z-index: 100}
+/*.img11 { width: 350px; top: 200px; left: 800px; }*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Trebuchet MS";
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #18181a;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 70%;
+    font-family: "Trebuchet MS";
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: #18181a;
+    opacity: 60%;
+}
+.popup-square1 a:first-of-type {
+    display: inline-block;
+    color: transparent;
+    width: 50px;
+    height: 50px;
+    background: url("logo/fb.jpg") no-repeat center;
+    background-size: contain;
+}
+
+.popup-square1 a:nth-of-type(2) {
+    display: inline-block;
+    width: 50px;
+    color: transparent;
+    height: 50px;
+    background: url("logo/twitter.jpg") no-repeat center;
+    background-size: contain;
+}
+
+
+.popup-square1 a:last-of-type {
+    display: inline-block;
+    width: 50px;
+    color: transparent;
+    height: 50px;
+    background: url("logo/mail.jpg") no-repeat center;
+    background-size: contain;
+}

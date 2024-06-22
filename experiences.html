@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ilina's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navlist">
+    <!--    <img src="White_Typography_Initial_CR_Logo-removebg-preview.png" height="100" width="300"/>-->
+    <img src="image-removebg-preview.png" width="150"/>
+    <div id="navlist-right">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="adventures.html">Adventures</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+<p class="opening">Experiences:</p>
+<div class="experiences">
+    <div class="gallery-ex">
+        <div class="ex1">
+            <img src="viber/viber_image_2024-06-19_20-17-19-520.jpg" class="hover-img"/>
+            <a href="projects.html"><p class="hover-text">DOKUTECH.-2022</p></a>
+        </div>
+    </div>
+</div>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navlist');
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Downscroll
+            navbar.style.top = '-200px'; // Adjust this value as needed
+        } else {
+            // Upscroll
+            navbar.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+
+</body>
+</html>
