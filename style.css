@@ -315,7 +315,8 @@ footer{
     opacity: 70%;
     border: 3px solid white;
     padding: 50px;
-    margin-left: 200px;
+    /*margin:auto;*/
+    /*margin-left: 200px;*/
     margin-top: 400px;
     margin-right: 200px;
     font-family: "Trebuchet MS";
