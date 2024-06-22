@@ -316,7 +316,7 @@ footer{
     border: 3px solid white;
     padding: 50px;
     /*margin:auto;*/
-    /*margin-left: 200px;*/
+    margin-left: 200px;
     margin-top: 400px;
     margin-right: 200px;
     font-family: "Trebuchet MS";
@@ -392,7 +392,7 @@ footer{
 .sliki{
     display: flex;
     margin-top: 400px;
-    margin-left: 250px;
+    justify-content: center;
 }
 .sliki img{
     margin: 10px;
@@ -578,7 +578,7 @@ footer{
     height: 1200px; /* Adjust the height as needed */
     margin-top: 200px;
     overflow: hidden;
-    margin-left: -30px;
+    margin-left: -100px;
 }
 
 .collage-img {
@@ -596,16 +596,16 @@ footer{
 }
 
 /* Custom positions for each image */
-.img1 { width: 350px; top: 20px; left: 50px; }
-.img2 { width: 400px; top: 100px; left: 700px; z-index: 100}
-.img3 { width: 350px; top: 50px; left: 1000px; }
-.img4 { width: 350px; top: 300px; left: 170px; z-index: 101}
-.img5 { width: 450px; top: 450px; left: 600px; }
-.img6 { width: 450px; top: 450px; left: 1000px; }
-.img7 { width: 350px; top: 350px; left: 1250px; z-index: 100 }
-.img8 { width: 400px; top: 100px; left: 1300px; }
-.img9 { width: 400px; top: 450px; left: 250px; z-index: 99}
-.img10 { width: 400px; top: 50px; left: 350px; z-index: 100}
+.img1 { width: 300px; top: 20px; left: 50px; }
+.img2 { width: 350px; top: 100px; left: 700px; z-index: 100}
+.img3 { width: 300px; top: 50px; left: 1000px; }
+.img4 { width: 300px; top: 300px; left: 170px; z-index: 101}
+.img5 { width: 400px; top: 450px; left: 600px; }
+.img6 { width: 400px; top: 450px; left: 1000px; }
+.img7 { width: 300px; top: 350px; left: 1250px; z-index: 100 }
+.img8 { width: 350px; top: 100px; left: 1300px; }
+.img9 { width: 350px; top: 450px; left: 250px; z-index: 99}
+.img10 { width: 350px; top: 50px; left: 350px; z-index: 100}
 /*.img11 { width: 350px; top: 200px; left: 800px; }*/
 
 .contact-form {
