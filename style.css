@@ -4,6 +4,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     margin-top: -200px;
 }
@@ -28,6 +29,7 @@ body {
     padding-top: -20px;
     padding-left: 500px;
     margin-right: 400px;
+    z-index: 2000;
 }
 
 #navlist a {
@@ -37,10 +39,10 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 25px;
     border-radius: 4px;
-    font-family: Bahnschrift;
+    font-family: "Trebuchet MS";
     word-spacing: 20px;
     padding-top: 50px;
 }
@@ -69,7 +71,7 @@ body {
 .content {
     /*display: flex;*/
     justify-content: center;
-    margin-top:450px;
+    margin-top:400px;
     font-size:22px;
     margin-left: 250px;
     /*padding-bottom: 300px;*/
@@ -85,18 +87,20 @@ body {
 .content h1{
     position: absolute;
     font-size: 120px;
-    top: 200px;
+    top: 150px;
     text-transform: uppercase;
 }
 .content p{
     position: absolute;
     font-size: 70px;
-    right: 490px;
-    top: 500px;
+    right: 250px;
+    top: 450px;
 
 }
 .prv-del{
-    margin-right: 50px;
+    margin-right: 80px;
+    margin-left: -100px;
+    /*margin-top: -50px;*/
 }
 
 .popup-square1{
@@ -117,7 +121,7 @@ body{
     /*background-position: center;*/
     width: auto;
     height: auto;
-    margin-right: 3000px;
+    margin-right: 4000px;
 }
 #navlist img{
     /*margin-top: 50px;*/
@@ -128,7 +132,7 @@ body{
 }
 a .button1{
     position: absolute;
-    margin-left: 900px;
+    margin-left: 800px;
     margin-top: -60px ;
     color: white;
     border: 2px solid white;
@@ -143,18 +147,16 @@ a .button1:hover{
     opacity: 60%;
     color: #27272a;
 }
+/*projects*/
 
 .projects{
-    /*display: inline-block;*/
     color: white;
     font-family: "Trebuchet MS";
-    justify-content: center;
+    /*justify-content: center;*/
     margin-top: 500px;
-    padding-left: 600px;
-    padding-right: 1100px   ;
-    width: 500px;
-    /*background-color: #18181a;*/
-    /*opacity: 70%;*/
+    padding-left: 450px;
+    /*padding-right: 1100px;*/
+    /*width: 500px;*/
 }
 
 .projects p{
@@ -167,7 +169,7 @@ a .button1:hover{
     margin-left: -320px;
     margin-top: 20px ;
     z-index: 0;
-    font-size: 70px;
+    font-size: 60px;
     opacity: 70%;
 }
 .projects p:last-of-type{
@@ -175,7 +177,7 @@ a .button1:hover{
     /*margin-top: 100px;*/
     top: -40px;
     left: -250px;
-    font-size: 20px;
+    font-size: 17px;
     width: 1000px;
     border-bottom: 2px solid white;
     padding-bottom: 20px;
@@ -268,14 +270,14 @@ html,body{
 
 }
 .dokutech p:nth-of-type(1){
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     text-align: center;
     background-color: #18181a;
     opacity: 80%;
     width: 1200px;
     font-family: "Trebuchet MS";
-    margin-left: 250px;
+    margin-left: 75px;
     padding: 20px;
     border-top: 2px solid white;
     word-spacing: 3px;
@@ -284,14 +286,14 @@ html,body{
 }
 .button3{
     position: absolute;
-    font-size: 25px;
+    font-size: 18px;
     background-color: transparent;
     border: 3px solid white;
     color: white;
     padding: 10px;
     opacity: 70%;
-    left: 1200px;
-    top: 1200px;
+    left: 1000px;
+    top: 990px;
 }
 a .button3:hover{
     background-color: white;
@@ -315,18 +317,21 @@ footer{
     opacity: 70%;
     border: 3px solid white;
     padding: 50px;
-    /*margin:auto;*/
+    margin:auto;
     margin-left: 200px;
     margin-top: 400px;
     margin-right: 200px;
     font-family: "Trebuchet MS";
     z-index: 1;
+    /*width: 100%;*/
 }
-
+.bg-ex{
+    /*width: 800px;*/
+}
 .ex1 {
     position: relative;
-    width: 400px;
-    height: 270px;
+    width: 300px;
+    height: 200px;
     overflow: hidden;
     margin: 0 auto;
     transition: transform 0.3s ease-in-out;
@@ -375,7 +380,9 @@ footer{
     text-transform: uppercase;
     margin-left: 150px;
     top: 85px;
+    width: 100%;
 }
+
 
 /*.social{*/
 /*    position: absolute;*/
@@ -575,10 +582,10 @@ footer{
 .collage-container {
     position: relative;
     width: 100%;
-    height: 1200px; /* Adjust the height as needed */
+    height: 1000px; /* Adjust the height as needed */
     margin-top: 200px;
     overflow: hidden;
-    margin-left: -20px;
+    /*margin-left: -20px;*/
 }
 
 .collage-img {
@@ -596,16 +603,16 @@ footer{
 }
 
 /* Custom positions for each image */
-.img1 { width: 300px; top: 20px; left: 50px; }
-.img2 { width: 350px; top: 100px; left: 700px; z-index: 100}
-.img3 { width: 300px; top: 50px; left: 1000px; }
-.img4 { width: 300px; top: 300px; left: 170px; z-index: 101}
-.img5 { width: 400px; top: 450px; left: 600px; }
-.img6 { width: 400px; top: 450px; left: 1000px; }
-.img7 { width: 300px; top: 350px; left: 1250px; z-index: 100 }
-.img8 { width: 350px; top: 100px; left: 1300px; }
-.img9 { width: 350px; top: 450px; left: 250px; z-index: 99}
-.img10 { width: 350px; top: 50px; left: 350px; z-index: 100}
+.img1 { width: 250px; top: 20px; left: 50px; }
+.img2 { width: 300px; top: 100px; left: 500px; z-index: 150}
+.img3 { width: 300px; top: 30px; left: 800px; }
+.img4 { width: 250px; top: 300px; left: 100px; z-index: 101}
+.img5 { width: 350px; top: 500px; left: 450px; }
+.img6 { width: 350px; top: 450px; left: 800px; }
+.img7 { width: 250px; top: 350px; left: 780px; z-index: 151 }
+.img8 { width: 300px; top: 100px; left: 1020px; }
+.img9 { width: 330px; top: 450px; left: 200px; z-index: 99}
+.img10 { width: 300px; top: 50px; left: 250px; z-index: 100}
 /*.img11 { width: 350px; top: 200px; left: 800px; }*/
 
 .contact-form {
